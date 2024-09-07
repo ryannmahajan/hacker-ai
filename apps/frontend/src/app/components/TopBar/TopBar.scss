@@ -1,0 +1,76 @@
+#box10 {
+    background-color: #ffffff;
+    width: calc(100% - 5vw); /* The width remains full minus the navbar width */
+    position: fixed;
+    top: 0;
+    left: 5vw; /* Stays aligned with the navbar */
+    z-index: 5;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    height: 8vh; /* Use vh for responsiveness */
+    align-items: center; /* Aligns content vertically in the middle */
+    transition: width 0.3s ease;
+}
+
+/* Search Bar Styling */
+#icon1 {
+    height: 4vh; /* Adjust icon size to be responsive */
+    width: auto; /* Maintain aspect ratio */
+}
+
+#search1 {
+    background-color: #ff9898;
+    display: flex;
+    border-radius: 20px;
+    position: absolute;
+    width: 15vw; /* Make the width responsive */
+    left: 20vw; /* Adjust relative to the screen width */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+#searBar {
+    border: 2px solid rgba(0, 0, 0, 0.245);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 20vw; /* Responsive width */
+    text-align: center;
+}
+
+/* User Icon */
+#user1 {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    height: 6vh; /* Use vh for responsive height */
+    width: auto; /* Maintain aspect ratio */
+    transition: right 0.3s ease;
+}
+
+/* Media queries for bigger displays */
+@media (min-width: 1200px) {
+    #box10 {
+        height: 4vh;
+        padding: 20px;
+    }
+
+    #search1 {
+        width: 15vw;
+        height: 4vh; /* Wider search bar */
+        left: 15vw; /* Adjust position relative to screen width */
+    }
+
+    #searBar {
+        width: 15vw;
+    }
+
+    #user1 {
+        right: 50px; /* More space for bigger displays */
+        height: 5vh;
+        justify-content: center;
+    }
+
+    #icon1 {
+        height: 5vh; /* Larger icon */
+    }
+}

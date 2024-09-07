@@ -1,0 +1,122 @@
+.nav1 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 7vw; /* Adjusted for better scaling on bigger screens */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    text-align: center;
+    padding: 2vw 1vw; /* Responsive padding */
+    justify-content: center;
+    transition: width 0.4s ease;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.navele1 {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navele1:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navele1:hover, .navele1:active {
+    text-decoration: none;
+}
+
+.nav1:hover {
+    width: 15vw; /* Expands on hover */
+}
+
+#logo1 {
+    position: relative;
+    top: -35%;
+}
+
+#logo2 {
+    height: 7vw; /* Adjusts logo size responsively */
+    max-height: 100px; /* Limit maximum size for larger screens */
+}
+
+#box1, #box2, #box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8vw; /* Use relative units */
+    width: 8vw;
+    margin-bottom: 2vw;
+    max-height: 100px; /* Cap height for larger screens */
+    max-width: 100px;
+}
+
+.nav-text {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    margin: 0;
+    font-size: 1.2vw; /* Scales font size relative to viewport width */
+}
+
+.nav1:hover .nav-text {
+    opacity: 1;
+}
+
+#img1, #img2, #img3 {
+    cursor: pointer;
+    height: 5vw;
+    width: 5vw;
+    transition: transform 0.4s ease;
+    max-height: 70px; /* Cap the size */
+    max-width: 70px;
+}
+
+#img2, #img3 {
+    height: 6vw;
+    width: 6vw;
+    max-height: 80px; /* Slightly larger images */
+    max-width: 80px;
+}
+
+.nav1:hover #img1, 
+.nav1:hover #img2, 
+.nav1:hover #img3 {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #a6ffff;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Media queries to adjust layout for larger displays */
+@media (min-width: 1200px) {
+    .nav1 {
+        width: 5vw; /* Smaller sidebar on larger screens */
+    }
+
+    .nav1:hover {
+        width: 12vw; /* Reduce hover expansion on large screens */
+    }
+
+    #box1, #box2, #box3 {
+        height: 7vw;
+        width: 7vw;
+    }
+
+    #img1, #img2, #img3 {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .nav-text {
+        font-size: 1vw;
+    }
+}

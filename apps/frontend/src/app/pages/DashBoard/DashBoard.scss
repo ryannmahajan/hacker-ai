@@ -1,0 +1,86 @@
+#dashBox {
+    background-color: rgb(255, 202, 202);
+    display: flex;
+    width: 80vw;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    height: 80vh;
+    z-index: 1; /* Remove negative z-index to ensure it's visible */
+}
+
+body {
+    overflow: hidden;
+}
+
+#graphBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 75%;
+    border-radius: 20px;
+    width: 80%;
+    background-color: rgb(255, 169, 169);
+    align-items: center; /* Align items in the middle */
+}
+
+#graphBox1, #graphBox2 {
+    background-color: lightgray;
+    height: 35vh; /* Responsive height */
+    width: 35vh;  /* Use vh to keep it proportional */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#graphBox1 {
+    background-color: blue;
+    padding: 20px;
+}
+
+#graphBox2 {
+    background-color: red;
+    padding: 20px;
+}
+
+#graph1, #graph2 {
+    background-color: green; /* Example color, you can change this */
+    height: 25vh; /* Responsive height */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex; /* Flex for centering */
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#graph2 {
+    background-color: purple; 
+}
+
+/* Text Styling */
+#txt1 {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    font-size: 2vw; /* Responsive font size */
+    font-weight: bold;
+}
+
+#txt2, #txt3 {
+    background-color: blueviolet;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.5vw; /* Responsive font size */
+}
