@@ -1,14 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
+import React from 'react';
+ import LandingPage from './components/LandingPage.jsx';
+ import MyPage from './components/Landingtwo.jsx';
 
-import NxWelcome from './nx-welcome';
-
-import { Route, Routes, Link } from 'react-router-dom';
-
-export function App() {
+function App() {
   return (
-    <div>
-      hello world!
+    <div className="App">
+      <LandingPage />
+      <MyPage />
     </div>
   );
 }
