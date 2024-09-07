@@ -4,11 +4,10 @@ import TopBar from '../../components/TopBar/TopBar.js'
 
 function DashBoard(){
     return(<>
-        <TopBar />
-        <Navbar />
+
 
         <div id='dashBox'>
-            <h3 id='title'>Welcome , User</h3>    
+            {/* <h3 id='title'>Welcome , User</h3>     */}
             <div id='graphBox'>
                 <div id='graphBox1' className='card'>
                     <p className='txt'>Your Recent Test Reports</p>

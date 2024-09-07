@@ -16,7 +16,7 @@ function Navbar() {
                         <p id="txt10" className="nav-text">Dashboard</p>
                     </div>
                     </Link>
-                    <Link to="/" className="navele1">
+                    <Link to="/reports" className="navele1">
                     <div id="box2">
                         <img src={report_icon} id="img2" alt="Reports"></img>
                         <p id="txt20" className="nav-text">Reports</p>

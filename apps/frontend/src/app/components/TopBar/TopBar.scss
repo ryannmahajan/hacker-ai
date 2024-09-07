@@ -17,8 +17,8 @@
 
 #logo1 {
     position: fixed;
-    top: 2vh;
-    left: 2vh;
+    top: -10px;
+    left: 1vh;
 }
 
 #logo2 {
@@ -33,7 +33,7 @@
 }
 
 #search1 {
-    background-color: #ff9898;
+    background-color: #fff4f4;
     border-radius: 20px;
     width: 15vw; /* Make the width responsive */
     margin-left: auto; /* Adjust relative to the screen width */
@@ -60,35 +60,8 @@
     position: absolute;
     right: 30px;
     top: 10px;
-    height: 6vh; /* Use vh for responsive height */
+    height: 70px; /* Use vh for responsive height */
     width: auto; /* Maintain aspect ratio */
     transition: right 0.3s ease;
 }
 
-/* Media queries for bigger displays */
-@media (min-width: 1200px) {
-    #box10 {
-        height: 4vh;
-        padding: 20px;
-    }
-
-    #search1 {
-        width: 15vw;
-        height: 4vh; /* Wider search bar */
-        left: 15vw; /* Adjust position relative to screen width */
-    }
-
-    #searBar {
-        width: 15vw;
-    }
-
-    #user1 {
-        right: 50px; /* More space for bigger displays */
-        height: 5vh;
-        justify-content: center;
-    }
-
-    #icon1 {
-        height: 5vh; /* Larger icon */
-    }
-}

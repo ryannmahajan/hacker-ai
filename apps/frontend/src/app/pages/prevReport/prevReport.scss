@@ -1,0 +1,141 @@
+#repBox {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    height: 100px; // default height for the box
+    margin: 30px;
+  }
+  #repBox {
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  #repBox:hover {
+    -webkit-box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
+  }
+
+body{
+    overflow: visible;
+}
+  
+  #repBox.expanded {
+    height: auto;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #mainbox1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    
+
+  }
+  
+  #repLHS {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    left: 10px;
+  }
+  
+  #repNum {
+    margin-bottom: 5vh; // Add vertical space of 5vh
+    width: 10vw;
+    background-color: #94dada;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  #repDate {
+    width: 10vw;
+    padding: 10px;
+    background-color: rgb(169, 255, 255);
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  #arr1 {
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  #repValue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 10px;
+    background-color: pink;
+    border-radius: 20px;
+    padding: 20px 10px;
+  }
+  
+  #repValue1, #repValue2 {
+    margin-right: 10px;
+  }
+  
+  #repBox:hover #arr1 {
+    opacity: 1;
+  }
+  
+  #hiddenContent {
+    display: none;
+    margin-top: 10px;
+    color: gray;
+    padding-left: 10px;
+    background-color: rgb(206, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 95%; // Make it the same width as the repBox
+  }
+  
+  
+  #repBox.expanded #hiddenContent {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    transition: opacity 1s ease;
+
+
+
+}
+
+  
+  #Rep_view{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-left: 10vw;
+
+  }
+
+
+  
+

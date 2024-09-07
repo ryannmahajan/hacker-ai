@@ -88,27 +88,4 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-/* Media queries to adjust layout for larger displays */
-@media (min-width: 1200px) {
-    .nav1 {
-        width: 5vw; /* Smaller sidebar on larger screens */
-    }
 
-    .nav1:hover {
-        width: 12vw; /* Reduce hover expansion on large screens */
-    }
-
-    #box1, #box2, #box3 {
-        height: 7vw;
-        width: 7vw;
-    }
-
-    #img1, #img2, #img3 {
-        height: 5vw;
-        width: 5vw;
-    }
-
-    .nav-text {
-        font-size: 1vw;
-    }
-}
