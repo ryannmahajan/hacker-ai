@@ -18,7 +18,8 @@ model User {
 }
 
 model bloodReport {
-  userId Int @unique
+  id Int @id @default(autoincrement())
+  userId Int
   user   User @relation(fields: [userId], references: [id])
   reportDate DateTime
   hemoglobin Decimal
@@ -49,6 +50,7 @@ model bloodReport {
 }
 
 model liverReport {
+  id Int @id @default(autoincrement())
   userId Int @unique
   user   User @relation(fields: [userId], references: [id])
   reportDate DateTime
