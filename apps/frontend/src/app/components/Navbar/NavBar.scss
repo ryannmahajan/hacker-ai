@@ -13,7 +13,10 @@
     justify-content: center;
     transition: width 0.4s ease;
     overflow: hidden;
-    z-index: 10;
+    z-index: 4;
+    -webkit-box-shadow: 4px 1px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 4px 1px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 4px 1px 5px 0px rgba(0,0,0,0.4);
 }
 
 .navele1 {
@@ -32,16 +35,6 @@
 
 .nav1:hover {
     width: 15vw; /* Expands on hover */
-}
-
-#logo1 {
-    position: relative;
-    top: -35%;
-}
-
-#logo2 {
-    height: 7vw; /* Adjusts logo size responsively */
-    max-height: 100px; /* Limit maximum size for larger screens */
 }
 
 #box1, #box2, #box3 {
@@ -92,7 +85,6 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #a6ffff;
     font-family: Helvetica, sans-serif;
 }
 

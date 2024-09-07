@@ -1,5 +1,4 @@
 #dashBox {
-    background-color: rgb(255, 202, 202);
     display: flex;
     width: 80vw;
     position: absolute;
@@ -13,6 +12,20 @@
     z-index: 1; /* Remove negative z-index to ensure it's visible */
 }
 
+.card {
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    -webkit-box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
+  }
+
 body {
     overflow: hidden;
 }
@@ -25,12 +38,11 @@ body {
     height: 75%;
     border-radius: 20px;
     width: 80%;
-    background-color: rgb(255, 169, 169);
     align-items: center; /* Align items in the middle */
+    border-radius: 10px;
 }
 
 #graphBox1, #graphBox2 {
-    background-color: lightgray;
     height: 35vh; /* Responsive height */
     width: 35vh;  /* Use vh to keep it proportional */
     display: flex;
@@ -44,17 +56,15 @@ body {
 }
 
 #graphBox1 {
-    background-color: blue;
     padding: 20px;
 }
 
 #graphBox2 {
-    background-color: red;
     padding: 20px;
 }
 
 #graph1, #graph2 {
-    background-color: green; /* Example color, you can change this */
+    background-color: aqua;
     height: 25vh; /* Responsive height */
     width: 100%;
     padding: 10px;
@@ -70,17 +80,18 @@ body {
 }
 
 /* Text Styling */
-#txt1 {
+#title {
     font-family: 'Arial', sans-serif;
     color: black;
-    font-size: 2vw; /* Responsive font size */
+    font-size: 4vw; /* Responsive font size */
     font-weight: bold;
+    margin-top: 2vh;
 }
 
-#txt2, #txt3 {
-    background-color: blueviolet;
+.txt {
     width: fit-content;
     padding: 5px;
     border-radius: 5px;
     font-size: 1.5vw; /* Responsive font size */
+    color: black;
 }

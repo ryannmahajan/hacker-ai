@@ -2,16 +2,13 @@ import dashboard_icon from '../icons/Dashboard_Icon.png';
 import report_icon from '../icons/Report_icon3.png';
 import chat_icon from '../icons/Doctor_talk.png';
 import './NavBar.scss';
-import logo from '../icons/ByteBook_LOGO.png'
 import {  Link } from 'react-router-dom';
 
 function Navbar() {
     return (
         <>
             <div className="nav1">
-                <div id='logo1'>
-                    <img id='logo2' src={logo}></img>
-                </div>
+
                 <div id='box5'>
                     <Link to="/" className="navele1">
                     <div id="box1">

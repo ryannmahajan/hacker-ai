@@ -1,17 +1,29 @@
 #box10 {
     background-color: #ffffff;
-    width: calc(100% - 5vw); /* The width remains full minus the navbar width */
+    width: 100%; 
     position: fixed;
+    display: flex;
     top: 0;
-    left: 5vw; /* Stays aligned with the navbar */
+    // left: 5vw; /* Stays aligned with the navbar */
     z-index: 5;
     display: flex;
     padding: 10px;
-    justify-content: center;
+    justify-content:space-between;
     height: 8vh; /* Use vh for responsiveness */
     align-items: center; /* Aligns content vertically in the middle */
     transition: width 0.3s ease;
     border-bottom: 2px solid rgba(0, 0, 0, 0.262);
+}
+
+#logo1 {
+    position: fixed;
+    top: 2vh;
+    left: 2vh;
+}
+
+#logo2 {
+    height: 7vw; /* Adjusts logo size responsively */
+    max-height: 100px; /* Limit maximum size for larger screens */
 }
 
 /* Search Bar Styling */
@@ -22,11 +34,16 @@
 
 #search1 {
     background-color: #ff9898;
-    display: flex;
     border-radius: 20px;
-    position: absolute;
     width: 15vw; /* Make the width responsive */
-    left: 20vw; /* Adjust relative to the screen width */
+    margin-left: auto; /* Adjust relative to the screen width */
+    margin-right: auto; /* Adjust relative to the screen width */
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Activate Flexbox layout */
+    justify-content: space-around; /* Aligns children horizontally with space in between */    
+
     transition: width 0.3s ease, left 0.3s ease;
 }
 
