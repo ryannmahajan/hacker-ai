@@ -13,5 +13,58 @@ model User {
   name String
   age Int
   gender String
+  bloodReports bloodReport[]
+  liverReport liverReport[]
+}
 
+model bloodReport {
+  userId Int @unique
+  user   User @relation(fields: [userId], references: [id])
+  reportDate DateTime
+  hemoglobin Decimal
+  packedCellVolume Decimal
+  rbcCount Decimal
+  mcv Decimal
+  mentzerIndex Decimal
+  mch Decimal
+  mchc Decimal
+  redCellDistributionWidth Decimal
+  totalLeukocyteCount Decimal
+
+  segmentedNeutrophilsDiff Decimal
+  lymphocytesDiff Decimal
+  monocytesDiff Decimal
+  eosinophilsDiff Decimal
+  basophilsDiff Decimal
+
+  neutrophils Decimal
+  lymphocytes Decimal
+  monocytes Decimal
+  eosinophils Decimal
+  basophils Decimal
+  plateletCount Decimal
+  meanPlateletVolume Decimal
+
+  summary String
+}
+
+model liverReport {
+  userId Int @unique
+  user   User @relation(fields: [userId], references: [id])
+  reportDate DateTime
+  meanPlateletVolume Decimal
+
+  altSgpt Decimal
+  astSgot Decimal
+  astAltRatio Decimal
+  alpAlkalinePhosphatase Decimal
+  ggt Decimal
+  totalBilirubin Decimal
+  directBilirubin Decimal
+  indirectBilirubin Decimal
+  albumin Decimal
+  totalProtein Decimal
+  agRatio Decimal
+
+  summary String
 }
