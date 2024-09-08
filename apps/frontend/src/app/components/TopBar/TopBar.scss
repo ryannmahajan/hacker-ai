@@ -1,5 +1,5 @@
 #box10 {
-    background-color: #ffffff;
+    background-color:#2E073F;
     width: 100%; 
     position: fixed;
     display: flex;
@@ -14,7 +14,13 @@
     transition: width 0.3s ease;
     border-bottom: 2px solid rgba(0, 0, 0, 0.262);
 }
+#box1001{
+    height: 50px;
+    z-index: 50;
 
+
+    background-color: white;
+}
 #logo1 {
     position: fixed;
     top: -10px;
@@ -59,9 +65,11 @@
 #user1 {
     position: absolute;
     right: 30px;
-    top: 10px;
-    height: 70px; /* Use vh for responsive height */
+    top: 12px;
+    height: 50px; /* Use vh for responsive height */
     width: auto; /* Maintain aspect ratio */
     transition: right 0.3s ease;
+    background-color: #EBD3F8;
+    border-radius: 20px;
 }
 

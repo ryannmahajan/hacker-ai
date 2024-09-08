@@ -1,0 +1,172 @@
+$primary-color: #2E073F;
+$secondary-color: #7A1CAC;
+$accent-color: #AD49E1;
+$light-color: #EBD3F8;
+
+#image-uploader-container {
+  font-family: Arial, sans-serif;
+  color: $light-color;
+  background-color: $primary-color;
+  margin-top: 120px;
+  width: 85%;
+  margin-left: 150px;
+  padding: 2rem;
+  border-radius: 10px;
+
+  #upload-heading {
+    color: $accent-color;
+    margin-bottom: 1rem;
+  }
+
+  #dropzone {
+    border: 2px dashed $accent-color;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    p {
+      color: $light-color;
+    }
+
+    &:hover {
+      background-color: lighten($primary-color, 5%);
+    }
+  }
+
+  #image-list {
+    margin-top: 1rem;
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        color: $light-color;
+        background-color: $secondary-color;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  #upload-button,
+  #summarize-button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: $accent-color;
+    color: $light-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($accent-color, 10%);
+    }
+  }
+
+  #extracted-data {
+    margin-top: 2rem;
+
+    .extracted-image-data {
+      margin-bottom: 2rem;
+
+      h4 {
+        color: $accent-color;
+      }
+
+      form {
+        margin-bottom: 1rem;
+
+        label {
+          display: block;
+          color: $light-color;
+          margin-bottom: 5px;
+
+          strong {
+            color: $secondary-color;
+          }
+
+          input {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid $secondary-color;
+            background-color: $primary-color;
+            color: $light-color;
+            margin-top: 5px;
+
+            &:focus {
+              outline: none;
+              border-color: $accent-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #summary-section {
+    margin-top: 2rem;
+
+    #summary-text {
+      background-color: $secondary-color;
+      padding: 1rem;
+      border-radius: 5px;
+      color: $light-color;
+    }
+  }
+}
+#box-rep-1 {
+  width: 80%;
+  margin-top: 40px;
+  padding: 20px;
+  height: 80%;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around; // This centers the graph boxes
+  margin-left: 200px;
+  background-color: $primary-color; // Background matching your theme
+}
+
+#graphBox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; // Adds space between the graph cards
+
+  .card {
+    background-color: $secondary-color; // Use secondary color for the cards
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%; // Make sure cards take up 45% of the container width
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Adds a subtle shadow
+
+    .txt {
+      color: $light-color;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      text-align: center;
+  
+    }
+    body{
+      background-color: #EBD3F8;
+    }
+#txt-7{
+  margin-bottom: 30px;
+}
+#txt-8{
+  margin-bottom: 30px;
+}
+    #graph1, #graph2 {
+      background-color: $primary-color; // Use primary color for graph backgrounds
+      height: 200px; // Adjust the graph height as needed
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $light-color; // Ensure text in graphs is readable
+    }
+  }
+}

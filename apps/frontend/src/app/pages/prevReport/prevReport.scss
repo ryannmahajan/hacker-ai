@@ -135,7 +135,44 @@ body{
     padding-left: 10vw;
 
   }
-
+  #sahil1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(255, 156, 156);
+    width: 93%;
+    margin-left: 25px;
+    border-radius: 20px;
+    margin-top: 2500px;
+    align-items: center;
+  }
+  #txt50{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  #bck1{
+    background-color: white;
+    border-radius: 90px;
+    width: 60px;
+    -webkit-box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  #bck1:hover{
+    -webkit-box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
+  
+  }
+  #subm1{
+    border-radius: 25px;
+    border: none;
+  }
+#icon_add1{
+    height: 60px;
+}
 
   
 

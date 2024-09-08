@@ -1,4 +1,4 @@
-#dashBox {
+#dashBox3 {
     display: flex;
     width: 80vw;
     position: absolute;
@@ -8,11 +8,16 @@
     flex-direction: column;
     align-items: center;
     text-align: left;
+    background-color: #ebd3f8;
     height: 80vh;
-    z-index: 1; /* Remove negative z-index to ensure it's visible */
+    z-index: 1; 
+}
+body{
+    background-color: #ebd3f8;
 }
 
-.card {
+
+.card3 {
     border-radius: 10px;
     -webkit-box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
     -moz-box-shadow: 1px 2px 6px 2px rgba(0,0,0,0.3);
@@ -20,14 +25,14 @@
     transition: box-shadow 0.3s ease-in-out;
   }
   
-  .card:hover {
+  .card3:hover {
     -webkit-box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 2px 4px 12px 4px rgba(0, 0, 0, 0.4);
   }
 
 
-#graphBox {
+#graphBox3 {
     display: flex;
     // border: 2px rgba(0, 0, 0, 0.251) solid;
     flex-direction: row;
@@ -40,8 +45,9 @@
     border-radius: 10px;
 }
 
-#graphBox1, #graphBox2 {
-
+#graphBox13, #graphBox23 {
+    
+    background-color:#2E073F;
     width: 25vw;
     height: 60vh;  
     display: flex;
@@ -54,19 +60,19 @@
     color: white;
 }
 
-#graphBox1 {
+#graphBox13 {
     padding: 20px;
 
     font-size: 20px;
 }
 
-#graphBox2 {
+#graphBox23 {
     padding: 20px;
 
     font-size: 20px;
 }
 
-#graph1, #graph2 {
+#graph13, #graph23 {
     background-color: rgb(255, 255, 255);
     height: 50vh; /* Responsive height */
     border: 2px rgba(0, 0, 0, 0.251) solid;
@@ -77,9 +83,12 @@
     display: flex; /* Flex for centering */
     justify-content: center;
     border-radius: 20px;
+
 }
 
-
+body{
+    background-color: #EBD3F8;
+}
 
 /* Text Styling */
 #title {
@@ -91,9 +100,10 @@
     
 }
 
-.txt {
+.txt3 {
     
     padding: 5px;
     border-radius: 5px;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
