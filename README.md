@@ -13,24 +13,28 @@ The project aims to develop an AI-driven web application that allows users to up
 The system will extract key information from the PDFs, summarize the content into a concise and human-readable format, and provide actionable suggestions based on the data.
 
 ## Tech Stack
-- **Frontend**: e.g., React , Scss
-- **Backend**: e.g., Node.js, Python, PyTesseract 
-- **Database**: e.g., Postgres, Prisma
-- **Other Technologies**: e.g., OpenAI etc.
+- **Frontend**: React , Scss
+- **Backend**:  Node.js, Python, PyTesseract 
+- **Database**: Postgres, Prisma
+- **Other Technologies**:  OpenAI
 
 ## How to Run the App
 1. Clone the repository.
-2. Install dependencies using `npm install` or `yarn install`.
-3. Start the development server with `npm start` or `yarn start`.
-4. Backend: [Instructions to start backend server, if applicable]
+2. Run following commands
+```
+npm install
+cd backend/apps
+npm install
+poetry shell
+poetry install
 
+node apps/backend/index.js
+nx serve frontend
+```
 ## How to Use the App
-- Provide instructions on navigating the app, key features, and user flows.
-- Include screenshots or GIFs if necessary to illustrate key functionality.
+- CLick "Upload Reports" on Main Screen
+- You'll be directed to upload screen
+- Navigate to reports summary for all the submitted reports through the sidebar (Click "reports")
 
 ## Publicly Accessible Artifacts
-- **Web App URL**: [Link to deployed web app]
-- **Mobile App**: [Instructions to generate and install mobile app bundle, if applicable]
-
-## Additional Notes
-- Any additional setup or configuration information
+- **Web App URL**: Backend: (http://13.60.46.23:3000)
