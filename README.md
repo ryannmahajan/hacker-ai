@@ -20,17 +20,21 @@ The system will extract key information from the PDFs, summarize the content int
 
 ## How to Run the App
 1. Clone the repository.
-2. Install dependencies using `npm install` or `yarn install`.
-3. Start the development server with `npm start` or `yarn start`.
-4. Backend: [Instructions to start backend server, if applicable]
-
+2. Run following commands
+```
+npm install
+cd backend/apps
+npm install
+poetry shell
+poetry install
+cd ../../
+node app.tsx
+cd frontend
+npm start
+```
 ## How to Use the App
 - Provide instructions on navigating the app, key features, and user flows.
 - Include screenshots or GIFs if necessary to illustrate key functionality.
 
 ## Publicly Accessible Artifacts
 - **Web App URL**: [Link to deployed web app]
-- **Mobile App**: [Instructions to generate and install mobile app bundle, if applicable]
-
-## Additional Notes
-- Any additional setup or configuration information
