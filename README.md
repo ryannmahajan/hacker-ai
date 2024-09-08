@@ -27,14 +27,14 @@ cd backend/apps
 npm install
 poetry shell
 poetry install
-cd ../../
-node app.tsx
-cd frontend
-npm start
+
+node apps/backend/index.js
+nx serve frontend
 ```
 ## How to Use the App
-- Provide instructions on navigating the app, key features, and user flows.
-- Include screenshots or GIFs if necessary to illustrate key functionality.
+- CLick "Upload Reports" on Main Screen
+- You'll be directed to upload screen
+- Navigate to reports summary for all the submitted reports through the sidebar (Click "reports")
 
 ## Publicly Accessible Artifacts
-- **Web App URL**: [Link to deployed web app]
+- **Web App URL**: Backend: (http://13.60.46.23:3000)
