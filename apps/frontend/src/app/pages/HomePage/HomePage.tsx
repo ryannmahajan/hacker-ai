@@ -29,8 +29,8 @@ const HomePage: React.FC<HomePageProps> = ({ someNumber }) => {
     <Link to="/home"><li className='lisele1'>Home</li></Link>
     <a onClick={() => scrollToSection('about')}><li className='lisele1'>About</li></a>
     <a onClick={() => scrollToSection('contact')}><li className='lisele1'>Contact</li></a>
-    <Link to="/login"><li className='lisele1'>Login</li></Link>
-    <Link to="/signup"><li className='lisele1'>Sign Up</li></Link>
+    <Link to="/liver_reports"><li className='lisele1'>Liver Reports</li></Link>
+    <Link to="/blood_reports"><li className='lisele1'>Blood Reports</li></Link>
   </ul>
 </nav>
 

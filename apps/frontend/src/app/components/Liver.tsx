@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
+import './Bar.css'
 
 
 interface VitalData {
